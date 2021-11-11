@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifReactApp = () => {
+export const GifReactApp = ({ defaultCategories = [] }) => {
 
-    const [categories, setCategories] = useState(['jjba']);
+    const [categories, setCategories] = useState([defaultCategories]);
 
     // const handleAdd = () => {
     //     setCategories([...categories, 'YuYu Hakusho']);
